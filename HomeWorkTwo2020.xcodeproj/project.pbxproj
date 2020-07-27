@@ -13,6 +13,7 @@
 		DA51665F24CC591A004E847B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA51665E24CC591A004E847B /* Assets.xcassets */; };
 		DA51666224CC591A004E847B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA51666124CC591A004E847B /* Preview Assets.xcassets */; };
 		DA51666524CC591A004E847B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA51666324CC591A004E847B /* LaunchScreen.storyboard */; };
+		DA51666D24CC5CF8004E847B /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51666C24CC5CF8004E847B /* SliderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DA51666124CC591A004E847B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA51666424CC591A004E847B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA51666624CC591A004E847B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA51666C24CC5CF8004E847B /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				DA51665824CC5917004E847B /* AppDelegate.swift */,
 				DA51665A24CC5917004E847B /* SceneDelegate.swift */,
 				DA51665C24CC5917004E847B /* ContentView.swift */,
+				DA51666C24CC5CF8004E847B /* SliderView.swift */,
 				DA51665E24CC591A004E847B /* Assets.xcassets */,
 				DA51666324CC591A004E847B /* LaunchScreen.storyboard */,
 				DA51666624CC591A004E847B /* Info.plist */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA51665924CC5917004E847B /* AppDelegate.swift in Sources */,
+				DA51666D24CC5CF8004E847B /* SliderView.swift in Sources */,
 				DA51665B24CC5917004E847B /* SceneDelegate.swift in Sources */,
 				DA51665D24CC5917004E847B /* ContentView.swift in Sources */,
 			);
