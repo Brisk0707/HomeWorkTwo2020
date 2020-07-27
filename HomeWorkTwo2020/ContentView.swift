@@ -18,7 +18,6 @@ struct ContentView: View {
             Color(red: 0.56, green: 0.84, blue: 0.97)
                 .edgesIgnoringSafeArea(.all)
             VStack {
-                
                 Color(red: redSliderValue / 255,
                       green: greenSliderValue / 255,
                       blue: blueSliderValue / 255)
