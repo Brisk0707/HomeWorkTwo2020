@@ -59,19 +59,19 @@ extension SliderView {
     }
     
     private func changeSliderValue() {
-    
-                if let rightValue = Double(self.textFiedValue){
-                    if rightValue <= 255 {
-                        value = rightValue
-                    } else {
-                        showingAlert = true
-                        textFiedValue = "0"
-                        value = 0.0
-                    }
-                } else {
-                    showingAlert = true
-                    textFiedValue = "0"
-                    value = 0.0
-                }
+        
+        if let rightValue = Double(self.textFiedValue){
+            if rightValue <= 255 {
+                value = rightValue
+            } else {
+                showingAlert = true
+                textFiedValue = "0"
+                value = 0.0
+            }
+        } else {
+            showingAlert = true
+            textFiedValue = "0"
+            value = 0.0
+        }
     }
 }
