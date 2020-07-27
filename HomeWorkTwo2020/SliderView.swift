@@ -12,6 +12,8 @@ struct SliderView: View {
     @Binding var value: Double
     @State private var textFiedValue = ""
     @State private var showingAlert = false
+    @State private var alertMessage = Text("")
+    
     var color: Color
     var body: some View {
         HStack {
@@ -39,7 +41,7 @@ struct SliderView: View {
             .textFieldStyle(RoundedBorderTextFieldStyle())
             .alert(isPresented: $showingAlert, content: {
                 Alert(title: Text("Wrong format!"),
-                      message: Text("Enter number 0...255"),
+                      message: alertMessage,
                       dismissButton: .default(Text("OK")))
             })
         }
@@ -64,11 +66,13 @@ extension SliderView {
             if rightValue <= 255 {
                 value = rightValue
             } else {
+                alertMessage = Text("The number must be less than 255")
                 showingAlert = true
                 textFiedValue = "0"
                 value = 0.0
             }
         } else {
+            alertMessage = Text("The value insn't a number")
             showingAlert = true
             textFiedValue = "0"
             value = 0.0
