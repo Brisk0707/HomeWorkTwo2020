@@ -38,8 +38,8 @@ struct SliderView: View {
             .frame(width: 60.0)
             .textFieldStyle(RoundedBorderTextFieldStyle())
             .alert(isPresented: $showingAlert, content: {
-                Alert(title: Text("Wrong format"),
-                      message: Text("Enter number 0...255"),
+                Alert(title: Text("Wrong format!"),
+                      message: Text("Enter a number 0...255"),
                       dismissButton: .default(Text("OK")))
             })
         }
